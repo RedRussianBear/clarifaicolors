@@ -2,7 +2,9 @@ $(document).ready(function () {
 
     // Ensure body resizes appropriately
     $('body').css('height', $(window).height());
-    $(window).resize(function () {$('body').css('height', $(window).height());});
+    $(window).resize(function () {
+        $('body').css('height', $(window).height());
+    });
 
     // Connect to Clarifai
     const app = new Clarifai.App({
