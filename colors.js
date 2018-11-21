@@ -28,11 +28,11 @@ $(document).ready(function () {
 
                     // Create new div to hold color information
                     const addition = $.parseHTML(
-                        '<div><span>' +
-                        color.raw_hex +
-                        '</span><span>' +
-                        color.w3c.name +
-                        '</span></div>')[0];
+                        '<div><span>'
+                        + color.raw_hex + '</span><span>'
+                        + color.w3c.name + '</span><span>'
+                        + color.value + '</span></div>'
+                    )[0];
 
                     $(addition).css('background-color', color.raw_hex);
                     if (tinycolor(color.raw_hex).isLight()) $(addition).css('color', 'black');
